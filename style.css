@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    padding:40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background: #010101;
+    color:white;
+    gap:20px;
+}
+.box{
+    background: #222;
+    padding: 30px 20px;
+    border-radius:5px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width:768px)
+{
+    .wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:576px)
+{
+    .wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
